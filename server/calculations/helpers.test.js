@@ -1,6 +1,14 @@
 const {getSubmatrix} = require("./helpers");
 
 describe("Get submatrix", () => {
+    test("Should return [4]", () => {
+        const matrix = [
+            [1, 2],
+            [3, 4],
+        ];
+        const newMatrix = getSubmatrix(matrix, 0, 0);
+        expect(newMatrix).toEqual([4]);
+    })
     test("Should return the same matrix without first row and first column", () => {
         const matrix = [
             [1, 2, 3],

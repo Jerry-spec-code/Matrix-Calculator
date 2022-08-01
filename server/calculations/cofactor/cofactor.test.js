@@ -14,4 +14,15 @@ describe("Cofactor", () => {
         ]
         expect(getCofactor(matrix)).toEqual(expectedCofactor);
     })
+    test("Should return cofactor", () => {
+        const matrix = [
+            [1, 2],
+            [3, 4],
+        ]
+        const expectedCofactor = [
+            [4, -3],
+            [-2, 1],         
+        ]
+        expect(getCofactor(matrix)).toEqual(expectedCofactor);
+    })
 })

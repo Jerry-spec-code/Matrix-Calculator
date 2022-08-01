@@ -8,6 +8,9 @@ const getSubmatrix = (matrix, row, column) => {
             if(i === row || j === column) {
                 continue;
             }
+            if (len === 2) {
+                return [matrix[i][j]];
+            }
             result[newI][newJ] = matrix[i][j];
             newJ++;
             if(newJ === len - 1) {
