@@ -5,12 +5,12 @@ const getSubmatrix = (matrix, row, column) => {
     let newJ = 0;
     for (let i = 0; i < len; i++) {
         for (let j = 0; j < len; j++) {
-            if(i == row || j == column) {
+            if(i === row || j === column) {
                 continue;
             }
             result[newI][newJ] = matrix[i][j];
             newJ++;
-            if(newJ == len - 1) {
+            if(newJ === len - 1) {
                 newJ = 0;
                 newI++;
             }
@@ -27,7 +27,31 @@ const initialize2DArray = (rows, columns) => {
     return result; 
 }
 
+const initializeArrayWithValue = (matrix, value) => {
+    for (let i = 0; i < matrix.length; i++) {
+        if(Array.isArray(matrix[i])) {
+            initializeArrayWithValue(matrix[i], value);
+        }
+        else {
+            matrix[i] = value; 
+        }
+    }
+}
+
+const scale = (matrix, scalar) => {
+    for (let i = 0; i < matrix.length; i++) {
+        if(Array.isArray(matrix[i])) {
+            scale(matrix[i], scalar);
+        }
+        else {
+            matrix[i] *= scalar; 
+        }
+    }
+}
+
 module.exports = {
     getSubmatrix, 
     initialize2DArray,
+    initializeArrayWithValue,
+    scale, 
 }
