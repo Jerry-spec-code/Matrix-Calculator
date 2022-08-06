@@ -15,6 +15,10 @@ router.post('/inverse', (req, res) => {
 router.post('/multiplyMatrices', (req, res) => {
     res.send(controller.multiplyMatrices(req.body[0], req.body[1]));
 })
+router.post('/numberTheory', (req, res) => {
+    res.send(controller.numberTheory(req.body[0]));
+    res.send(req.body);
+})
 router.post('/solveEquations', (req, res) => {
     res.send(controller.solveEquations(req.body[0], req.body[1]));
 })

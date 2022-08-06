@@ -4,6 +4,16 @@ const {getInverse} = require("../calculations/inverse/inverse");
 const {multiplyMatrices} = require("../calculations/matrixmultiplication/matrixmultiplication");
 const {solveEquations} = require("../calculations/systemsofequations/systemsofequations");
 const {getTranspose} = require("../calculations/transpose/transpose");
+const {prime_factorization, solution, lower_primes, units} = require("../calculations/numbertheory/numbertheory");
+
+const numberTheory = (value) => {
+    return [
+        prime_factorization(value),
+        solution(value),
+        lower_primes(value),
+        units(value)
+    ];
+}
 
 module.exports = {
     getCofactor,
@@ -12,5 +22,6 @@ module.exports = {
     multiplyMatrices,
     solveEquations,
     getTranspose,
+    numberTheory,
 };
 

@@ -1,4 +1,4 @@
-export const prime_factorization = (strValue) => {
+const prime_factorization = (strValue) => {
     const value = parseInt(strValue);
   
     if (value === 1) {
@@ -77,7 +77,7 @@ export const prime_factorization = (strValue) => {
     return primes;
   };
   
-  export const lower_primes = (strValue) => {
+const lower_primes = (strValue) => {
     const value = parseInt(strValue);
   
     if (value < 3) {
@@ -114,7 +114,7 @@ export const prime_factorization = (strValue) => {
     return primes;
   };
   
-  export const solution = (strValue) => {
+const solution = (strValue) => {
     const value = parseInt(strValue);
   
     if (value < 5) {
@@ -129,7 +129,7 @@ export const prime_factorization = (strValue) => {
     return primitive_root(value);
   };
   
-  export const units = (strValue) => {
+const units = (strValue) => {
     const value = parseInt(strValue);
   
     if (value === 1) {
@@ -144,7 +144,7 @@ export const prime_factorization = (strValue) => {
     return result;
   };
   
-  export const primitive_root = (value) => {
+ const primitive_root = (value) => {
     const units = new Array(value);
     boolInit(units, value);
     getResults(units, value);
@@ -250,7 +250,7 @@ export const prime_factorization = (strValue) => {
   };
   
   //Checks if strValue is a postive integer.
-  export const errFree = (strValue) => {
+const errFree = (strValue) => {
     if (strValue.includes(".")) {
       return false;
     }
@@ -276,3 +276,11 @@ export const prime_factorization = (strValue) => {
   
     return true;
   };
+
+  module.exports = {
+    prime_factorization,
+    solution,
+    lower_primes,
+    units,
+    errFree,
+}

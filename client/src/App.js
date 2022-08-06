@@ -7,6 +7,7 @@ import NumberTheory from './components/NumberTheory/NumberTheory';
 
 function App() {
   const [activeTab, setActiveTab] = React.useState(0);
+
   return (
     <div className="App">
       <PageHeader />

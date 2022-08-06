@@ -11,6 +11,36 @@
   margin: auto; 
 }
 
+.solve_prime_fac {
+  font-size: 30px;
+  color: green;
+  text-align: center; 
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+.solve_prim_roots {
+  font-size: 30px;
+  color: blue;
+  text-align: center; 
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+.solve_low_prime {
+  font-size: 30px;
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+.solve_unit {
+  font-size: 30px;
+  color: red;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

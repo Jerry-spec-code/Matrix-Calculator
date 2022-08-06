@@ -1,16 +1,16 @@
 import React from 'react'
 import Form from "./Form";
 import Input from "./Input";
+import Display from "./Display";
 
 const NumberTheory = ({show}) => {
 
-    const [number, setNumber] = React.useState("");
-    const [clicked, setClicked] = React.useState(false);
+    const [results, setResults] = React.useState([]);
     const [primeFacChecked, setPrimeFacChecked] = React.useState(false);
     const [primRootChecked, setPrimRootChecked] = React.useState(false);
     const [lowerPrimeChecked, setLowerPrimeChecked] = React.useState(false);
     const [unitsChecked, setUnitsChecked] = React.useState(false);
-    
+
     if(!show) {
         return <></>;
     }
@@ -28,10 +28,13 @@ const NumberTheory = ({show}) => {
             unitsChecked={unitsChecked}
             setUnitsChecked={setUnitsChecked}
             />
-            <Input
-            number={number}
-            setNumber={setNumber}
-            setClicked={setClicked}
+            <Input setResults={setResults}/>
+            <Display
+            results={results}
+            primeFacChecked={primeFacChecked}
+            primRootChecked={primRootChecked}
+            lowerPrimeChecked={lowerPrimeChecked}
+            unitsChecked={unitsChecked}
             />
         </h2>
     </div>
