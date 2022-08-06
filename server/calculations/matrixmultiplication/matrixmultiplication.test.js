@@ -16,7 +16,7 @@ describe("Multiply matrices", () => {
         const result = multiplyMatrices(matrix1, matrix2);
         expect(result).toEqual(TypeError("Invalid matrix dimensions"));
     })
-    test("Should throw invalid dimensions error", () => {
+    test("Should output a correct solution", () => {
         const matrix1 = [
             [1, 2, 3],
             [4, 5, 6],
