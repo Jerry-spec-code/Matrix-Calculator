@@ -16,28 +16,28 @@ const NumberTheory = ({show}) => {
     }
 
     return (
-    <div className="App">
-        <h2>
-            <Form
-            primeFacChecked={primeFacChecked}
-            setPrimeFacChecked={setPrimeFacChecked}
-            primRootChecked={primRootChecked}
-            setPrimRootChecked={setPrimRootChecked}
-            lowerPrimeChecked={lowerPrimeChecked}
-            setLowerPrimeChecked={setLowerPrimeChecked}
-            unitsChecked={unitsChecked}
-            setUnitsChecked={setUnitsChecked}
-            />
-            <Input setResults={setResults}/>
-            <Display
-            results={results}
-            primeFacChecked={primeFacChecked}
-            primRootChecked={primRootChecked}
-            lowerPrimeChecked={lowerPrimeChecked}
-            unitsChecked={unitsChecked}
-            />
-        </h2>
-    </div>
+        <div className="App">
+            <h2>
+                <Form
+                primeFacChecked={primeFacChecked}
+                setPrimeFacChecked={setPrimeFacChecked}
+                primRootChecked={primRootChecked}
+                setPrimRootChecked={setPrimRootChecked}
+                lowerPrimeChecked={lowerPrimeChecked}
+                setLowerPrimeChecked={setLowerPrimeChecked}
+                unitsChecked={unitsChecked}
+                setUnitsChecked={setUnitsChecked}
+                />
+                <Input setResults={setResults}/>
+                <Display
+                results={results}
+                primeFacChecked={primeFacChecked}
+                primRootChecked={primRootChecked}
+                lowerPrimeChecked={lowerPrimeChecked}
+                unitsChecked={unitsChecked}
+                />
+            </h2>
+        </div>
     )
 }
 

@@ -2,6 +2,14 @@ import React from 'react'
 
 const Display = ({results, primeFacChecked, primRootChecked, lowerPrimeChecked, unitsChecked}) => {
 
+    if(results[0] === "error") {
+        return <div className="error">{results[1]}</div>;
+    }
+
+    if (!(primeFacChecked || primRootChecked || lowerPrimeChecked || unitsChecked)) {
+        return <div className="error">Please check at least one property!</div>;
+    }
+
     const display = (className, text) => {
         return (
           <div>

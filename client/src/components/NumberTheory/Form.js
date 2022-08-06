@@ -19,27 +19,27 @@ const Form = ({
         <FormGroup>
           <FormControlLabel
             control={
-              <Checkbox onChange={() => setPrimeFacChecked(!primeFacChecked)} />
+              <Checkbox checked={primeFacChecked} onChange={() => setPrimeFacChecked(!primeFacChecked)} />
             }
             label="The prime factorization of n."
           />
           <FormControlLabel
             control={
-              <Checkbox onChange={() => setPrimRootChecked(!primRootChecked)} />
+              <Checkbox checked={primRootChecked} onChange={() => setPrimRootChecked(!primRootChecked)} />
             }
             label="Every primitive root (mod n)."
           />
           <FormControlLabel
             control={
               <Checkbox
-                onChange={() => setLowerPrimeChecked(!lowerPrimeChecked)}
+              checked={lowerPrimeChecked} onChange={() => setLowerPrimeChecked(!lowerPrimeChecked)}
               />
             }
             label="Every positive prime below n."
           />
           <FormControlLabel
             control={
-              <Checkbox onChange={() => setUnitsChecked(!unitsChecked)} />
+              <Checkbox checked={unitsChecked} onChange={() => setUnitsChecked(!unitsChecked)} />
             }
             label="All of the units (mod n)."
           />

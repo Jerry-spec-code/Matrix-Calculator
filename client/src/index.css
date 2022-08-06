@@ -11,6 +11,18 @@
   margin: auto; 
 }
 
+.error {
+  max-width: 700px;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  margin: 30px;
+  position: relative;
+  left: 320px;
+  text-align: center; 
+  padding: 15px;
+}
+
 .solve_prime_fac {
   font-size: 30px;
   color: green;

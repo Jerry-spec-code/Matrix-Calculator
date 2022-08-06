@@ -38,7 +38,8 @@ const Input = ({ setResults }) => {
   return (
     <div>
       <br/>
-      <TextField size="large" id="input" label="Enter a positive integer" variant="outlined" onChange={(e) => setNumber(e.target.value)}/>
+      <TextField size="large" id="input" label="Enter a positive integer" 
+      variant="outlined" onChange={(e) => setNumber(e.target.value)}/>
       <Button sx={{
         margin: "0px 0px 0px 100px", 
         backgroundColor: "black", 
