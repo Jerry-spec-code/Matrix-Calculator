@@ -4,7 +4,7 @@ Developed a linear algebra/number theory calculator that servers as an automatio
 
 ## Two Key Features:
 1. The number theory calculator takes a positive integer input and outputs the prime factorization of n, every primitive root (modulo n), every positive prime number less than n, and all of the units (modulo n).
-2. The linear algebra calculator returns a unique solution to a user-specified system of linear equations as well as calculates determinants, inverses, transposes, and multiplies real and complex matrices
+2. The linear algebra calculator returns a unique solution to a user-specified system of linear equations as well as calculates determinants, inverses, transposes, and multiplies matrices
 
 ## Languages/Frameworks used: 
 1. Javascript
