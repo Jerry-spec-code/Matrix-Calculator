@@ -105,11 +105,21 @@ const Solution = ({show}) => {
             </Typography>
         </Button>
         <br/><br/>
-        {results.map((value) => {
+        {results.map((value, index) => {
             return (
+                index > 0 && !value.includes("=") ? (
+                    <>
+                    <br/>
+                    <Typography sx={{fontSize: "23px", textTransform:"none"}}>
+                    {value}
+                    </Typography>
+                    </>
+                ) : (
                 <Typography sx={{fontSize: "23px", textTransform:"none"}}>
                 {value}
                 </Typography>
+                )
+                
             )
         })}
     </div>
