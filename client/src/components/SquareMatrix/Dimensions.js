@@ -34,7 +34,15 @@ const Dimensions = ({show, description, route}) => {
       }, [clicked]);
 
       React.useEffect(() => {
-        setMatrix(util.initialize2DArray(dim, dim));
+        const temp = util.initialize2DArray(dim, dim)
+        for (let i = 0; i < temp.length; i++) {
+            for (let j = 0; j < temp.length; j++) {
+                if (i < matrix.length && j < matrix.length) {
+                    temp[i][j] = matrix[i][j];
+                }
+            }
+        }
+        setMatrix(temp);
       }, [dim])
 
     if(!show) {
