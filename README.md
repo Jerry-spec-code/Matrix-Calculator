@@ -19,8 +19,12 @@ Developed a linear algebra/number theory calculator that servers as an automatio
 In my Math 145/146 (Advanced Algebra I, Linear Algebra I) classes, we explored different conjectures and techniques to efficiently solve modulo arithmetic equations and systems of linear equations. I initially wanted to build this App to minimize the tedious calculations for my math assignments so that I could focus on finding unique and insightful patterns.
 
 # Screenshots of Project
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/78711575/176974560-4f064543-4a86-453b-9748-6156c98f10e5.png">
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/78711575/176974573-f35de619-aefa-4976-bb92-820f04fb3c53.png">
+
+### Systems of Equations Calculator
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/78711575/183314675-b5a13328-3879-49f2-9aad-0d6abd586984.png">
+
+### Number Theory Calculator
+<img width="1436" alt="image" src="https://user-images.githubusercontent.com/78711575/183314695-8a496032-60ac-4170-ac9b-990eadbb36d7.png">
 
 ### Express Server Setup 
 
