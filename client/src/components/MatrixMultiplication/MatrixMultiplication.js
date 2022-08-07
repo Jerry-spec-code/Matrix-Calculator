@@ -98,7 +98,6 @@ const MatrixMultiplication = ({show}) => {
 
     return (
         <div>
-            <br/>
             <Typography variant="h6">
                 {data.operations.multiplyMatrices.description}
             </Typography>

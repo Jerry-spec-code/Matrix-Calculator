@@ -66,29 +66,26 @@ const Calculate = ({show, description, route}) => {
 
     return (
         <div>
-            <br/>
             <Typography variant="h6">
                 {description}
             </Typography>
             <Typography variant="h7">
                 {data.operations.defaultValues}
             </Typography>
-            <br/><br/>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Dimensions message={`Current dimension (adjustable): ${dim} x ${dim}`} subOne={subOne} addOne={addOne}/>
             </Grid>
-            <br/>
             <Matrix matrix={matrix} setMatrix={setMatrix} numOfRows={dim} numOfCols={dim}/>
             <br/>
             <Button sx={{
             margin: "0px 0px 0px 0px", 
             backgroundColor: "black", 
-            padding: "5px 10px"}} 
+            padding: "0px 5px"}} 
             size="large" 
             variant="contained"
             onClick={myClick}
             >
-                <Typography sx={{fontSize: "23px", textTransform:"none"}}>
+                <Typography sx={{fontSize: "16px", textTransform:"none"}}>
                 Calculate!
                 </Typography>
             </Button>
