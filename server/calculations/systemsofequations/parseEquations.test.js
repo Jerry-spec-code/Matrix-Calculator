@@ -41,4 +41,18 @@ describe("Systems of Equations", () => {
         "x1 = -1", 
         "x2 = 2"]);
     })
+    test("Should return no unique solution", () => {
+        const matrix = [
+            [0, 0, 0, 4],
+            [0, 0, 0, 1],
+            [0, 0, 0, 8],
+        ];
+        const solution = parseEquations(matrix);
+        expect(solution).toEqual([
+            "Here are the equations being solved:",
+                "0 = 4",
+                "0 = 1",
+                "0 = 8",
+            "No unique solutions"]);
+    })
 })
