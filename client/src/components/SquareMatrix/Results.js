@@ -8,7 +8,7 @@ const Results = ({matrix}) => {
 
     if(matrix.length === 1) {
         return (
-            <Typography>
+            <Typography sx={{fontSize: "20px"}}>
                 {matrix[0]}
             </Typography>
         )

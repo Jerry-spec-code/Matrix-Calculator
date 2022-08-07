@@ -12,7 +12,16 @@ const data = {
     },
     operations : {
         cofactor : {
-            description : "Calculate the cofactor matrix by specifying matrix dimensions and values!",
+            description : "Calculates the cofactor matrix by specifying matrix dimensions and values!",
+        },
+        determinant : {
+            description : "Calculates the determinant of the given matrix",
+        },
+        inverse : {
+            description : "Calculates the inverse of the matrix (if it exists)",
+        },
+        transpose : {
+            description : "Calculates the transpose of the matrix",
         }
     },
 }
