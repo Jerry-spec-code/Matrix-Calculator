@@ -1,6 +1,12 @@
 const {prime_factorization, solution, lower_primes, units, errFree} = require("./numbertheory");
 
 describe('Error Checking', () =>  {
+
+    test('', () => {
+        const result = errFree('');
+        expect(result).toBeFalsy();
+    })
+
     test('0', () => {
         const result = errFree('0');
         expect(result).toBeFalsy();
