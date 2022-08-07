@@ -9,6 +9,11 @@ const data = {
             "Multiply Matrices",
             "Transpose",
         ],
-    }
+    },
+    operations : {
+        cofactor : {
+            description : "Calculate the cofactor matrix by specifying matrix dimensions and values!",
+        }
+    },
 }
 export default data; 
