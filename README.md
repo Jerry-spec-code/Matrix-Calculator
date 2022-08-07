@@ -55,3 +55,5 @@ npm install
 npm test
 ```
  
+ <img width="819" alt="image" src="https://user-images.githubusercontent.com/78711575/183314646-6cb57ba2-3563-49fc-b7c6-9b9e653357d1.png">
+
