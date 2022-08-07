@@ -6,7 +6,7 @@ const {scale} = require("../helpers");
 const getInverse = (matrix) => {
     const det = getDeterminant(matrix);
     if(det === 0) {
-        return "This matrix is not invertible";
+        return ["This matrix is not invertible"];
     }
     const result = getTranspose(getCofactor(matrix));
     scale(result, 1 / det);

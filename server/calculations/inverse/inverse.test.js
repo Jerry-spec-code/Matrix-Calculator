@@ -6,7 +6,7 @@ describe("Inverse", () => {
             [0, 0], 
             [0, 0],
         ];
-        expect(getInverse(matrix)).toEqual("This matrix is not invertible");
+        expect(getInverse(matrix)).toEqual(["This matrix is not invertible"]);
     })
     test("Non-zero determinant matrix should have an inverse", () => {
         const matrix = [
