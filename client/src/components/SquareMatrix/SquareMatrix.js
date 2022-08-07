@@ -12,7 +12,12 @@ const SquareMatrix = ({matrix, setMatrix}) => {
         for (let a = 0; a < result.length; a++) {
             for (let b = 0; b < result.length; b++) {
                 if(a === i && b === j) {
-                    result[a][b] = value;
+                    if (value === "") {
+                        result[a][b] = 0;
+                    }
+                    else {
+                        result[a][b] = value;
+                    }
                 }
                 else {
                     result[a][b] = matrix[a][b];

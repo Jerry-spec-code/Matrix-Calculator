@@ -10,9 +10,14 @@ const AugmentedMatrix = ({matrix, setMatrix}) => {
     const update = (value, i, j) => {
         const result = util.initialize2DArray(matrix.length, matrix.length + 1);
         for (let a = 0; a < result.length; a++) {
-            for (let b = 0; b < result.length; b++) {
+            for (let b = 0; b < result[a].length; b++) {
                 if(a === i && b === j) {
-                    result[a][b] = value;
+                    if (value === "") {
+                        result[a][b] = 0;
+                    }
+                    else {
+                        result[a][b] = value;
+                    }
                 }
                 else {
                     result[a][b] = matrix[a][b];
@@ -30,7 +35,7 @@ const AugmentedMatrix = ({matrix, setMatrix}) => {
                         {temp[i].map((value, j) => {
                             return j === matrix.length? 
                             (
-                                <Grid style={{margin : "0px 0px 0px 30px"}}item xs={1}>
+                                <Grid style={{margin : "0px 0px 0px 30px"}} item xs={1}>
                                 <TextField onChange={(e) => update(e.target.value, i, j)}></TextField>
                                 </Grid>
                             ) : 
