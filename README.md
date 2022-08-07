@@ -18,7 +18,7 @@ Developed a linear algebra/number theory calculator that servers as an automatio
 ## Motivation: 
 In my Math 145/146 (Advanced Algebra I, Linear Algebra I) classes, we explored different conjectures and techniques to efficiently solve modulo arithmetic equations and systems of linear equations. I initially wanted to build this App to minimize the tedious calculations for my math assignments so that I could focus on finding unique and insightful patterns.
 
-# Screenshots of Project
+## Screenshots of Project
 
 ### Systems of Equations Calculator
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/78711575/183314675-b5a13328-3879-49f2-9aad-0d6abd586984.png">
