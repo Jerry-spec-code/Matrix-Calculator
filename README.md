@@ -1,6 +1,6 @@
 # Matrix-Calculator
 
-Developed a linear algebra/number theory calculator that servers as an automation tool for algebraic calculations to aid university students 
+Developed a linear algebra/number theory calculator that servers as an automation tool for algebraic calculations to aid university students in solving matrix operations and efficiently solve modulo arithmetic equations 
 
 ## Two Key Features:
 1. The number theory calculator takes a positive integer input and outputs the prime factorization of n, every primitive root (modulo n), every positive prime number less than n, and all of the units (modulo n).
