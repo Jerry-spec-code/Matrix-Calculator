@@ -4,6 +4,7 @@ const routes = {
     cofactor: `${API_ROOT}/cofactor`,
     determinant: `${API_ROOT}/determinant`,
     inverse: `${API_ROOT}/inverse`,
+    solveEquations: `${API_ROOT}/solveEquations`,
     transpose: `${API_ROOT}/transpose`,
     numberTheory: `${API_ROOT}/numberTheory`,
 }

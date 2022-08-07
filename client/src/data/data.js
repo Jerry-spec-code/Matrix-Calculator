@@ -20,9 +20,13 @@ const data = {
         inverse : {
             description : "Calculates the inverse of the matrix (if it exists)",
         },
+        solveEquations : {
+            description : "Solves any linear system of equations",
+        },
         transpose : {
             description : "Calculates the transpose of the matrix",
-        }
+        },
+        defaultValues : "Leaving an entry blank defaults to 0",
     },
 }
 export default data; 

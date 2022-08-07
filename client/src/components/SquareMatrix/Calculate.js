@@ -1,12 +1,13 @@
 import React from 'react';
 import SquareMatrix from './SquareMatrix';
-import Results from './Results';
+import Results from '../Results/Results';
 import util from "../../util/util";
+import data from "../../data/data";
 import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
 import Grid from '@mui/material/Grid';
 
-const Dimensions = ({show, description, route}) => {
+const Calculate = ({show, description, route}) => {
 
     const [dim, setDim] = React.useState(3);
     const [results, setResults] = React.useState([]);
@@ -68,7 +69,10 @@ const Dimensions = ({show, description, route}) => {
             <Typography variant="h6">
                 {description}
             </Typography>
-            <br/>
+            <Typography variant="h7">
+                {data.operations.defaultValues}
+            </Typography>
+            <br/><br/>
             <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid item>
             <Button variant="contained" 
@@ -107,4 +111,4 @@ const Dimensions = ({show, description, route}) => {
     )
 }
 
-export default Dimensions; 
+export default Calculate;
