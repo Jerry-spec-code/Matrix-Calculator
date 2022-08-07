@@ -20,7 +20,7 @@ const Results = ({matrix}) => {
             {matrix.map((arr, i) => {
                 return (
                     <Grid container justifyContent="center" alignItems="center" rowSpacing={1}>
-                        {matrix.map((value, j) => {
+                        {matrix[i].map((value, j) => {
                             return (
                                 <Grid item xs={1}>
                                    <TextField value={matrix[i][j]}></TextField>

@@ -117,8 +117,6 @@ const MatrixMultiplication = ({show}) => {
                 Calculate!
                 </Typography>
             </Button>
-            <br/><br/>
-            <Results matrix={results}/>
             <br/>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Dimensions message={`Number of rows: ${dim1}`} subOne={subOneDim1} addOne={addOneDim1}/>
@@ -136,6 +134,7 @@ const MatrixMultiplication = ({show}) => {
             </Grid>
             <Matrix matrix={matrix2} setMatrix={setMatrix2} numOfRows={dim2} numOfCols={dim3} />
             <br/><br/>
+            <Results matrix={results}/>
         </div>
     )
 }

@@ -17,7 +17,9 @@ router.post('/inverse', (req, res) => {
     res.send(error.validMatrix(req, next));
 })
 router.post('/multiplyMatrices', (req, res) => {
-    res.send(controller.multiplyMatrices(req.body[0], req.body[1]));
+    const complete = () => controller.multiplyMatrices(req.body[0], req.body[1]);
+    const next = () => error.validMatrix({body : req.body[1]}, complete)
+    res.send(error.validMatrix({body : req.body[0]}, next));
 })
 router.post('/numberTheory', (req, res) => {
     const next = () => controller.numberTheory(req.body[0]);
