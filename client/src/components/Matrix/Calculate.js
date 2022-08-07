@@ -1,6 +1,7 @@
 import React from 'react';
-import SquareMatrix from './SquareMatrix';
+import Matrix from './Matrix';
 import Results from '../Results/Results';
+import Dimensions from '../Dimensions/Dimensions';
 import util from "../../util/util";
 import data from "../../data/data";
 import Button from '@mui/material/Button';
@@ -74,24 +75,10 @@ const Calculate = ({show, description, route}) => {
             </Typography>
             <br/><br/>
             <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid item>
-            <Button variant="contained" 
-            color="error" sx={{margin: "0px 10px 0px 0px", padding: "0px 2px"}}
-            onClick={subOne}>-</Button>
-            </Grid>
-            <Grid>
-            <Typography variant="h6">
-                Current dimension (adjustable): {dim} x {dim}
-            </Typography>
-            </Grid>
-            <Grid item>
-            <Button variant="contained" 
-            color="success" sx={{margin: "0px 0px 0px 10px", padding: "0px 2px"}}
-            onClick={addOne}>+</Button>
-            </Grid>
+                <Dimensions message={`Current dimension (adjustable): ${dim} x ${dim}`} subOne={subOne} addOne={addOne}/>
             </Grid>
             <br/>
-            <SquareMatrix matrix={matrix} setMatrix={setMatrix}/>
+            <Matrix matrix={matrix} setMatrix={setMatrix} numOfRows={dim} numOfCols={dim}/>
             <br/>
             <Button sx={{
             margin: "0px 0px 0px 0px", 

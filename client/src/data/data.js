@@ -20,6 +20,9 @@ const data = {
         inverse : {
             description : "Calculates the inverse of the matrix (if it exists)",
         },
+        multiplyMatrices : {
+            description : "Multiplies the two matrices",
+        },
         solveEquations : {
             description : "Solves any linear system of equations",
         },

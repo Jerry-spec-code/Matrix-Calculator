@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Tabs from './components/Tabs/Tabs';
 import PageHeader from './components/PageHeader/PageHeader';
 import NumberTheory from './components/NumberTheory/NumberTheory';
-import Calculate from './components/SquareMatrix/Calculate';
+import Calculate from './components/Matrix/Calculate';
+import MatrixMultiplication from './components/MatrixMultiplication/MatrixMultiplication';
 import Solution from './components/SolveEquations/Solution';
 import data from './data/data';
 import routes from './config/api';
@@ -26,6 +26,7 @@ function App() {
       <Calculate show={activeTab === 2} description={cofactor.description} route={routes.cofactor}/>
       <Calculate show={activeTab === 3} description={determinant.description} route={routes.determinant}/>
       <Calculate show={activeTab === 4} description={inverse.description} route={routes.inverse}/>
+      <MatrixMultiplication show={activeTab === 5} />
       <Calculate show={activeTab === 6} description={transpose.description} route={routes.transpose}/>
     </div>
   );

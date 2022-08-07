@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import util from '../../util/util';
 
-const SquareMatrix = ({matrix, setMatrix}) => {
+const Matrix = ({matrix, setMatrix, numOfRows, numOfCols}) => {
 
-    const temp = util.initialize2DArray(matrix.length, matrix.length);
+    const temp = util.initialize2DArray(numOfRows, numOfCols);
     const update = (value, i, j) => {
-        const result = util.initialize2DArray(matrix.length, matrix.length);
+        const result = util.initialize2DArray(numOfRows, numOfCols);
         for (let a = 0; a < result.length; a++) {
-            for (let b = 0; b < result.length; b++) {
+            for (let b = 0; b < result[a].length; b++) {
                 if(a === i && b === j) {
                     if (value === "") {
                         result[a][b] = 0;
@@ -32,7 +32,7 @@ const SquareMatrix = ({matrix, setMatrix}) => {
             {temp.map((arr, i) => {
                 return (
                     <Grid container justifyContent="center" alignItems="center" rowSpacing={1}>
-                        {temp.map((value, j) => {
+                        {temp[i].map((value, j) => {
                             return (
                                 <Grid item xs={1}>
                                     <TextField onChange={(e) => update(e.target.value, i, j)}></TextField>
@@ -49,4 +49,4 @@ const SquareMatrix = ({matrix, setMatrix}) => {
 
 
 
-export default SquareMatrix;
+export default Matrix;

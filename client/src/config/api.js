@@ -6,6 +6,7 @@ const routes = {
     inverse: `${API_ROOT}/inverse`,
     solveEquations: `${API_ROOT}/solveEquations`,
     transpose: `${API_ROOT}/transpose`,
+    multiplyMatrices: `${API_ROOT}/multiplyMatrices`,
     numberTheory: `${API_ROOT}/numberTheory`,
 }
 
