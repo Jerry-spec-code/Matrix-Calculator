@@ -17,15 +17,28 @@ describe("Systems of Equations", () => {
             [5, 6, 7, 8],
         ];
         const solution = parseEquations(matrix);
-        expect(solution).toEqual(["No unique solutions"]);
+        expect(solution).toEqual([
+            "Here are the equations being solved:",
+            "x0 + 2x1 + 3x2 = 4",
+            "4x0 + 3x1 + 2x2 = 1",
+            "5x0 + 6x1 + 7x2 = 8",
+            "No unique solutions"]);
     })
     test("Should return a unique solution", () => {
         const matrix = [
             [1, 2, 3, 4],
             [4, 3, 2, 1],
-            [1, 2, 4, 6],
+            [-1, -2, -4, -6],
         ];
         const solution = parseEquations(matrix);
-        expect(solution).toEqual(["Here are the solutions:", "x0 = 0", "x1 = -1", "x2 = 2"]);
+        expect(solution).toEqual([
+        "Here are the equations being solved:",
+        "x0 + 2x1 + 3x2 = 4",
+        "4x0 + 3x1 + 2x2 = 1",
+        "1x0 - 2x1 - 4x2 = -6",
+        "Here are the solutions:", 
+        "x0 = 0", 
+        "x1 = -1", 
+        "x2 = 2"]);
     })
 })

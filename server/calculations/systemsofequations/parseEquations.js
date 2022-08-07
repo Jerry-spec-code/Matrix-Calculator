@@ -15,9 +15,9 @@ const parseEquations = (augMatrix) => {
             coeffMatrix[i][j] = augMatrix[i][j];
         }
     }
-    
+
     const solution = solveEquations(coeffMatrix, constMatrix);
-    return interpret(solution);
+    return [...getEquations(coeffMatrix, constMatrix), ...interpret(solution)];
 }
 
 const getConstMatrix = (augMatrix) => {
@@ -26,6 +26,22 @@ const getConstMatrix = (augMatrix) => {
         result.push(augMatrix[i][augMatrix.length]);
     }
     return result;
+}
+
+const getEquations = (coeffMatrix, constMatrix) => {
+    const result = ["Here are the equations being solved:"];
+    for (let i = 0; i < coeffMatrix.length; i++) {
+        let temp = "";
+        for (let j = 0; j < coeffMatrix.length; j++) {
+           temp += coeffMatrix[i][j] === 1 ? `x${j}` : (Math.abs(coeffMatrix[i][j])).toString() + `x${j}`;
+           if(j < coeffMatrix.length - 1) {
+            temp += coeffMatrix[i][j+1] < 0 ? " - " : " + ";
+           }    
+        }
+        temp += " = " + constMatrix[i].toString();
+        result.push(temp);
+    }
+    return result; 
 }
 
 const interpret = (solution) => {
