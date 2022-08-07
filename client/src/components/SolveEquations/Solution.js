@@ -104,6 +104,14 @@ const Solution = ({show}) => {
             Calculate!
             </Typography>
         </Button>
+        <br/><br/>
+        {results.map((value) => {
+            return (
+                <Typography sx={{fontSize: "23px", textTransform:"none"}}>
+                {value}
+                </Typography>
+            )
+        })}
     </div>
     )
 }

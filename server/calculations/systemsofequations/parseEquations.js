@@ -15,7 +15,7 @@ const parseEquations = (augMatrix) => {
             coeffMatrix[i][j] = augMatrix[i][j];
         }
     }
-
+    
     const solution = solveEquations(coeffMatrix, constMatrix);
     return interpret(solution);
 }
@@ -25,7 +25,6 @@ const getConstMatrix = (augMatrix) => {
     for (let i = 0; i < augMatrix.length; i++) {
         result.push(augMatrix[i][augMatrix.length]);
     }
-    console.log(result);
     return result;
 }
 
