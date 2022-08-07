@@ -6,7 +6,7 @@ const Display = ({results, primeFacChecked, primRootChecked, lowerPrimeChecked, 
         return <div className="error">{results[1]}</div>;
     }
 
-    if (!(primeFacChecked || primRootChecked || lowerPrimeChecked || unitsChecked)) {
+    if (results.length > 0 && !(primeFacChecked || primRootChecked || lowerPrimeChecked || unitsChecked)) {
         return <div className="error">Please check at least one property!</div>;
     }
 
