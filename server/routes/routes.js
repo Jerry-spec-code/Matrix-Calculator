@@ -7,7 +7,7 @@ router.post('/cofactor', (req, res) => {
     res.send(controller.getCofactor(req.body));
 })
 router.post('/determinant', (req, res) => {
-    res.send(controller.getDeterminant(req.body));
+    res.send([`The determinant is ${controller.getDeterminant(req.body)}`]);
 })
 router.post('/inverse', (req, res) => {
     res.send(controller.getInverse(req.body));
