@@ -33,7 +33,19 @@ const getEquations = (coeffMatrix, constMatrix) => {
     for (let i = 0; i < coeffMatrix.length; i++) {
         let temp = "";
         for (let j = 0; j < coeffMatrix.length; j++) {
-           temp += coeffMatrix[i][j] === 0 ? "" : (coeffMatrix[i][j] === 1 ? `x${j}` : (Math.abs(coeffMatrix[i][j])).toString() + `x${j}`);
+           if (coeffMatrix[i][j] < 0) { 
+            if (temp === "") {
+                temp += coeffMatrix[i][j] === -1 ? `-x${j}` : coeffMatrix[i][j].toString() + `x${j}`;
+            }
+            else {
+                temp += coeffMatrix[i][j] === -1 ? `x${j}` : Math.abs(coeffMatrix[i][j]).toString() + `x${j}`
+            }
+           } 
+
+           else {
+            temp += coeffMatrix[i][j] === 0 ? "" : (coeffMatrix[i][j] === 1 ? `x${j}` : coeffMatrix[i][j].toString() + `x${j}`);
+           }
+
            if(j < coeffMatrix.length - 1) {
             temp += temp === "" || coeffMatrix[i][j + 1] === 0 ? "" : (coeffMatrix[i][j+1] < 0 ? " - " : " + ");
            }    
