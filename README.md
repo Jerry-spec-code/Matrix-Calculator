@@ -24,7 +24,7 @@ In my Math 145/146 (Advanced Algebra I, Linear Algebra I) classes, we explored d
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/78711575/183314675-b5a13328-3879-49f2-9aad-0d6abd586984.png">
 
 ### Number Theory Calculator
-<img width="1436" alt="image" src="https://user-images.githubusercontent.com/78711575/183314695-8a496032-60ac-4170-ac9b-990eadbb36d7.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/78711575/183320738-b43c7898-2a7f-4a47-9a50-63885892ed51.png">
 
 ### Express Server Setup 
 
