@@ -1,6 +1,6 @@
 # Matrix-Calculator
 
-Developed a linear algebra/number theory calculator that servers as an automation tool for algebraic calculations to aid university students in solving matrix operations and efficiently solve modulo arithmetic equations 
+Developed a linear algebra/number theory calculator that servers as an automation tool for algebraic calculations and aiding university students in efficiently solving matrix operations and modulo arithmetic equations 
 
 ## Two Key Features:
 1. The number theory calculator takes a positive integer input and outputs the prime factorization of n, every primitive root (modulo n), every positive prime number less than n, and all of the units (modulo n).
@@ -15,7 +15,7 @@ Developed a linear algebra/number theory calculator that servers as an automatio
 6. Jest Testing Framework
 
 ## Motivation: 
-In my Math 145/146 (Advanced Algebra I, Linear Algebra I) classes, we explored different conjectures and techniques to efficiently solve modulo arithmetic equations and systems of linear equations. I initially wanted to build this App to minimize the tedious calculations for my math assignments so that I could focus on finding unique and insightful patterns.
+In my Math 145/146 (Advanced Algebra I, Advanced Linear Algebra I) classes, we explored different conjectures and techniques to efficiently solve modulo arithmetic equations and systems of linear equations. I initially wanted to build this App to minimize the tedious calculations for my math assignments so that I could focus on finding unique and insightful patterns.
 
 ## Screenshots of Project
 
