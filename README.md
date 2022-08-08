@@ -7,7 +7,7 @@ Developed a linear algebra/number theory calculator that servers as an automatio
 2. The linear algebra calculator returns a unique solution to a user-specified system of linear equations as well as calculates determinants, inverses, transposes, and multiplies matrices
 
 ## Languages/Frameworks used: 
-1. Javascript
+1. JavaScript
 2. React.js
 3. Node.js/Express.js
 4. Material-UI
