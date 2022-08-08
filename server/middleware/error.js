@@ -1,11 +1,11 @@
 const {errFree} = require("../calculations/numbertheory/numbertheory");
 
 const validMatrix = (req, next) => {
-    const matrix = req.body;
-    if (!Array.isArray(matrix)) {
-        return ["Error: Not a matrix"];
-    }
     try {
+        const matrix = req.body;
+        if (!Array.isArray(matrix)) {
+            return ["Error: Not a matrix"];
+        }
         for (let i = 0; i < matrix.length; i++) {
             for (let j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = parseFloat(matrix[i][j]);
