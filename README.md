@@ -13,7 +13,6 @@ Developed a linear algebra/number theory calculator that servers as an automatio
 4. Material-UI
 5. HTML/CSS
 6. Jest Testing Framework
-7. React Testing Library
 
 ## Motivation: 
 In my Math 145/146 (Advanced Algebra I, Linear Algebra I) classes, we explored different conjectures and techniques to efficiently solve modulo arithmetic equations and systems of linear equations. I initially wanted to build this App to minimize the tedious calculations for my math assignments so that I could focus on finding unique and insightful patterns.
