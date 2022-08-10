@@ -1,5 +1,6 @@
 # Matrix-Calculator
 
+# What is it?
 Developed a linear algebra/number theory calculator that servers as an automation tool for algebraic calculations and aiding university students in efficiently solving matrix operations and modulo arithmetic equations 
 
 ## Two Key Features:
